@@ -1,0 +1,38 @@
+<div class="sidebar">
+  <a class="active" href="/seller">Items</a>
+  <a href="/orderlist">Orders</a>
+  <a href="/quections">Questions</a>
+</div>
+<div class="content">
+
+  <Button routerLink="/additem" style="background-color: #b8f1b7">Add New Item</Button>
+
+  <h2>All Products</h2>
+
+  <table id="items">
+    <tr>
+      <th>Item Id</th>
+      <th>Item Name</th>
+      <th>Item Price</th>
+      <th>Item Catagory</th>
+      <th>Item Countity</th>
+      <th>Edite item</th>
+    </tr>
+
+    <tr *ngFor="let item of items">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.price}}</td>
+      <td>{{item.catagory}}</td>
+      <td>{{item.countity}}</td>
+      <td><a routerLink="/item/{{item.id}}"><Button >edit</Button></a></td>
+<!--      <td> <button class="remove-button" (click)="removeFromItem()">-->
+<!--        Remove-->
+<!--      </button></td>-->
+    </tr>
+
+  </table>
+
+
+</div>
+

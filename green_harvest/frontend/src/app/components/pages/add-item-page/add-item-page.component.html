@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="column" >
+   <img src="assets/img/bgimage5.jpg" style="margin-left: 250px">
+  </div>
+  <div class="column">
+    <div class="container">
+      <div class="details">
+        <app-title title="Add New Item"></app-title>
+        <form [formGroup]="additemForm" (ngSubmit)="submit()">
+          <text-input
+            [control]="fc.name"
+            [showErrorsWhen]="isSubmitted"
+            label="Name">
+            `</text-input>
+
+          <text-input
+            [control]="fc.price"
+            [showErrorsWhen]="isSubmitted"
+            label="Price">
+            `</text-input>
+
+
+          <text-input
+            [control]="fc.catagory"
+            [showErrorsWhen]="isSubmitted"
+            label="Catagary">
+            `</text-input>
+
+          <text-input
+            [control]="fc.countity"
+            [showErrorsWhen]="isSubmitted"
+            label="countity">
+            `</text-input>
+
+
+
+          <default-button text="ADD"></default-button>
+
+          <div class="login" style="color: black">
+            See All Items? &nbsp;
+            <a routerLink="/seller" [queryParams]="{returnUrl: returnUrl}" style="color: black">
+              go to items page
+            </a>
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+<div class="sidebar">
+  <a class="active" href="/login-admin">Analytics</a>
+  <a  href="/login-admin">Total Sell</a>
+  <a  href="/login-admin">Total Orders</a>
+  <a href="/login-admin">Total Purches</a>
+  <a  href="/login-admin">location</a>
+  <a  href="/login-admin">Settings</a>
+</div>
+
+<div class="content" style="margin-top:-510px" >
+  <img src="assets/dashboard2.jpg" width="1250px" style="margin-top: -400px" >
+  <h2>All Users</h2>
+  <table id="items" >
+    <tr>
+      <th>User Id</th>
+      <th>User Name</th>
+      <th>User Email</th>
+      <th>User Address</th>
+      <!-- <th>Action</th> -->
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.address}}</td>
+    </tr>
+  </table>
+  <h2>All Orders</h2>
+  <table id="items">
+    <tr>
+      <th>Order Id</th>
+      <th>Order Price</th>
+      <th>Order By</th>
+      <th>Address</th>
+      <th>Pyament Status</th>
+    </tr>
+
+    <tr *ngFor="let order of orders">
+      <td>{{order.id}}</td>
+      <td>$ {{order.totalPrice}}</td>
+      <td>{{order.name}}</td>
+      <td>{{order.address}}</td>
+      <td>{{order.status}}</td>
+    </tr>
+
+  </table>
+  <h1>All Items</h1>
+
+  <table id="items">
+    <tr>
+      <th>Item Id</th>
+      <th>Item Name</th>
+      <th>Item Price</th>
+      <th>Item Catagory</th>
+      <th>Item Countity</th>
+    </tr>
+
+    <tr *ngFor="let item of items">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.price}}</td>
+      <td>{{item.catagory}}</td>
+      <td>{{item.countity}}</td>
+
+    </tr>
+
+  </table>
+
+  <h2>All Sellers</h2>
+  <table id="items">
+    <tr>
+      <th>Seller Id</th>
+      <th>Seller CardNo</th>
+      <th>Seller Name</th>
+      <th>Seller Email</th>
+      <th>Seller Email</th>
+    </tr>
+    <tr *ngFor="let seller of sellers">
+      <td>{{seller.id}}</td>
+      <td>{{seller.sellerid}}</td>
+      <td>{{seller.name}}</td>
+      <td>{{seller.email}}</td>
+      <td>{{seller.address}}</td>
+    </tr>
+
+  </table>
+
+</div>
+
+<!-- <div style="margin-top: -550px">
+<app-order-list-page></app-order-list-page>
+</div>
+
+<div style="margin-top: -480px">
+  <app-seller></app-seller>
+</div>
+
+<div style="margin-top: -780px">
+  <app-allsellerslist-page></app-allsellerslist-page>
+</div> -->
+
+
+
+
+

@@ -1,0 +1,40 @@
+.containerpay{
+  margin-top: 1rem;
+  display: flex;
+  margin: 0 2rem 6rem 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contentpay{
+  width: 35rem;
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.summarypay > div{
+  display: flex;
+  margin-top: 0.7rem;
+}
+
+.summarypay span {
+  font-size: 1.2rem;
+}
+
+.summarypay h3{
+  margin: 0 1rem 0 0;
+  flex-basis: 5rem;
+}
+
+
+.buttons-containerpay{
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonspay{
+  margin: 2rem;
+  width: 35rem;
+}

@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="column">
+    <img src="assets/img/bgimage2.jpg" style="width: 550px ;margin-left: 200px">
+  </div>
+  <div class="column">
+    <div class="container">
+      <div class="details" >
+        <app-title title="Login"></app-title>
+
+        <form [formGroup]="loginForm" (ngSubmit)="submit()">
+
+          <text-input
+            [control]="fc.email"
+            [showErrorsWhen]="isSubmitted"
+            type="email"
+            label="Email">
+          </text-input>
+
+          <text-input
+            [control]="fc.password"
+            [showErrorsWhen]="isSubmitted"
+            type="password"
+            label="Password">
+          </text-input>
+
+          <default-button text="Login"></default-button>
+          <div class="register" style="color: black">
+            New user? &nbsp;
+            <a routerLink="/register" [queryParams]="{returnUrl : returnUrl}" class="register" style="color: #044904">
+              Register here
+            </a>
+          </div>
+          <div class="register" class="register" style="color: black">
+            Your admin? &nbsp;
+            <a routerLink="/login-admin" [queryParams]="{returnUrl : returnUrl}" class="register" style="color: #145214">
+              Click here
+            </a>
+          </div>
+          <div class="register" class="register" style="color: black">
+            Your seller? &nbsp;
+            <a routerLink="/seller" [queryParams]="{returnUrl : returnUrl}" class="register" style="color: #145214">
+              Click here
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
